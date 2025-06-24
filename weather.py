@@ -20,7 +20,8 @@ def get_weather(city):
                 'city': data['name'],
                 'temperature': data['main']['temp'],
                 'description': data['weather'][0]['description'],
-                'humidity': data['main']['humidity']
+                'humidity': data['main']['humidity'],
+                'icon': data['weather'][0]['icon']
             }
     except:
         return None
